@@ -1,0 +1,126 @@
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <title>Formulario de contacto</title>
+
+    <!-- Enlace al documento css. no aplicable en codepen.>
+    <link rel="stylesheet" type="text/css" href="contact-form.css">
+  
+    <!-- Basic-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title >FII</title>
+    <style>
+       
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+        padding-left: 20px;
+    }
+
+   </style>
+</head>
+<body>	
+
+    <!-- cabecera del sitio -->  
+    <header class="container">
+        <div class="header-content">
+            <div class="header-title">Fundamentos</div>
+            <nav>
+                <a href="#" class="active">Índice</a>
+                <a href="#">Sobre Mí</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- formulario de contacto en html y css -->  
+	<div class="contact_form">
+		<div class="formulario">			
+            <h1>Formulario de Contacto.</h1>
+			<h3>Escríbeme y podremos ponernos en contacto.</h3>
+			<form action="submeter-formulario.php" method="post">
+				<p>
+				    <label for="nombre" class="colocar_nombre">Nombre
+				        <span class="obligatorio">*</span>
+				    </label>
+				    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escriba su nombre...">
+				</p>
+							
+				<p>
+				    <label for="email" class="colocar_email">Correo
+					    <span class="obligatorio">*</span>
+				    </label>
+				    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escriba su correo electrónico...">
+				</p>
+						
+				<p>
+				    <label for="telefone" class="colocar_telefono">Teléfono</label>
+				    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escriba su teléfono">
+				</p>		
+							
+				<p>
+					<label for="website" class="colocar_website">Sitio Web</label>
+					<input type="url" name="introducir_website" id="website" placeholder="Escriba su URL de tu web">
+				</p>		
+							
+				<p>
+					<label for="asunto" class="colocar_asunto">Asunto
+						<span class="obligatorio">*</span>
+					</label>
+					<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Asunto de la solicitud-">
+				</p>		
+							
+				<p>
+					<label for="mensaje" class="colocar_mensaje">Mensaje
+						<span class="obligatorio">*</span>
+					</label>                     
+             	    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+               	</p>	  								
+							
+				<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+				<p class="aviso">
+					<span class="obligatorio"> * </span>los campos son obligatorios.
+				</p>					
+		    </form>
+		</div>	
+    </div>
+</body>
+</html>
+
+
+<!-- creado por javiniguez.com, Julio 2019 -->
