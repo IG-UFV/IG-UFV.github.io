@@ -71,7 +71,7 @@ nav a.active {
 }
 
 .content {
-    height: 800px;
+    max-height: 2000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
